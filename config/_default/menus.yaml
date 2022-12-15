@@ -1,0 +1,51 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: About 
+    url: ''
+    weight: 10
+    identifier: LLL
+  - name: "About"
+    url: ''
+    weight: 11
+    parent: LLL
+  - name: "In 5 minutes: presentation"
+    url: ../slides/lll-mic/
+    weight: 12
+    parent: LLL
+  - name: News
+    url: post
+    weight: 20
+  - name: Contributors
+    url: contributors
+    weight: 30
+  - name: Musical artists
+    url: /music_artist/
+    weight: 50
+  - name: Music
+    url: /music_work/
+    identifier: Music
+    weight: 55
+  - name: Genres, Scenes, Traditions
+    url: /genre/
+    weight: 56
+    parent: Music
+  - name: Music Works & Recordings
+    url: /music_work/
+    weight: 56
+    parent: Music
+  - name: Contact & Events
+    url: '#contact'
+    weight: 90
+    identifier: Contact
+  - name: Get in touch
+    url: '/contact'
+    weight: 90
+    parent: Contact
+  - name: Public talks
+    url: /event
+    weight: 92
+    parent: Contact
