@@ -1,6 +1,6 @@
 ---
-title: "Bitelė Siaubia In Balta Dobilia"
-date: 2019-03-26T00:00:00
+title: "Razviavay, Kolyo, Bayraka"
+date: 2022-12-15T00:00:00
 draft: false
 
 authors: ""
@@ -11,9 +11,9 @@ authors: ""
 publication_types: ["0"]
 
 # Abstract and optional shortened version.
-abstract: 'Bitelė Siaubia In Balta Dobilia is a folk song written and performed by Lithuanian band Kūlgrinda.'
+abstract: 'Razviavay, Kolyo, Bayraka is a Bulgarian folk song performed by Valya Balkanska.'
 
-abstract_short: 'Folk song by Kūlgrinda.'
+abstract_short: 'Bulgarian Folk song by Valya Balkanska.'
 
 # Is this a selected publication? (true/false)
 featured: true
@@ -33,16 +33,16 @@ links:
   - icon_pack: fas
     icon: music
     name: Performer
-    url: /music_artist/kulgrinda/
+    url: /music_artist/valya_balkanska/
   - icon_pack: fab
     icon: spotify
     name: Listen
-    url: 'https://open.spotify.com/track/3lbGDSNGACw0QDBzSk65Hs?si=fafda4039db14682'
+    url: 'https://open.spotify.com/track/2iobtQlnQn30ZJoEnZ5BeP?si=cde6d81348bd4f9b'
     
 show_date: false
     
 # Tags (optional).
-tags: ["Lithuanian", "Folk", "Song"]
+tags: ["Bulgarian", "Folk", "Song"]
 
 # Links (optional).
 url_pdf: ""
@@ -75,5 +75,4 @@ image:
   focal_point: "Smart"
 ---
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3lbGDSNGACw0QDBzSk65Hs?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/60nGFFeBopwV4Isd7OgyTx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
