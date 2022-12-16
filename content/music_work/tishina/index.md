@@ -1,6 +1,6 @@
 ---
-title: "Mirštantis"
-date: 2019-03-26T00:00:00
+title: "Tishina"
+date: 2022-12-15T00:00:00
 draft: false
 
 authors: ""
@@ -11,9 +11,9 @@ authors: ""
 publication_types: ["0"]
 
 # Abstract and optional shortened version.
-abstract: 'Donatas Bielkauskas, a.k.a. DONIS (born in 1977, in Jurbarkas) is a Lithuanian neofolk artist and multi-instrumentalist.'
+abstract: 'Tishina is a Bulgarian pop song performed by rositsa Kirilova.'
 
-abstract_short: 'Donatas Bielkauskas (born in 1977, in Jurbarkas) is a Lithuanian neofolk artist and multi-instrumentalist.'
+abstract_short: 'Tishina is a Bulgarian pop song performed by rositsa Kirilova'
 
 # Is this a selected publication? (true/false)
 featured: true
@@ -33,16 +33,16 @@ links:
   - icon_pack: fas
     icon: music
     name: Performer
-    url: /music_artist/donatas_bielkauskas/
+    url: /music_artist/rositsa_kirilova/
   - icon_pack: fab
     icon: spotify
     name: Listen
-    url: 'https://open.spotify.com/track/3WYtcilUmTMoEpv2yA9x74?si=86cb42c9ebc0429a'
+    url: 'https://open.spotify.com/track/5DWXPekjEqtI44XjZfoBfo?si=aa4dae343b0849a0'
 
 show_date: false
     
 # Tags (optional).
-tags: ["Lithuania", "Folk", "Experimental"]
+tags: ["Bulgarian", "Pop"]
 
 # Links (optional).
 url_pdf: ""
@@ -75,6 +75,6 @@ image:
   focal_point: "Smart"
 ---
 
-"Surrounding sound collages: night city, sea port."
+Tishina is a Bulgarian pop song performed by rositsa Kirilova.
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3WYtcilUmTMoEpv2yA9x74?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5DWXPekjEqtI44XjZfoBfo?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

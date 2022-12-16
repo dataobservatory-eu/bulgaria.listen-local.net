@@ -1,14 +1,15 @@
 ---
-title: Aistė Smilgevičiūtė
-summary: 'Aistė Smilgevičiūtė (born 29 October 1977) is a Lithuanian singer. She performs folk music, jazz, pop rock and other kinds of alternative music.'
+title: Rositsa Kirilova
+summary: 'Rositsa Kirilova (born 2 July 1953) is a Bulgarian pop singer.'
 
-date: "2021-11-20T00:00:00Z"
+date: "2021-12-15T00:00:00Z"
 show_date: false
 show_auhtor: false
 
 tags:
-   - Lithuania
-   - Plungė
+   - Bulgaria
+   - Pop
+   - Disco
    
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -21,39 +22,35 @@ links:
   - icon: spotify
     icon_pack: fab
     name: Listen
-    url: https://open.spotify.com/artist/6Iucw86uE5QnTZXZP0E0rc
-  - icon: apple
-    icon_pack: fab
-    name: Listen
-    url: https://music.apple.com/us/artist/aist%C4%97-smilgevi%C4%8Di%C5%ABt%C4%97/397185519
+    url: https://open.spotify.com/artist/1NkWIfrcZy5a08a0q7v9Q2?si=dxk0KAvAT6iPOsMOGS4VDQ
   - icon: youtube
     icon_pack: fab
     name: Watch
-    url: https://music.youtube.com/channel/UCWcuyOnYFFh15touZLGGf8g
+    url: https://www.youtube.com/channel/UCRXoVCKa0pmOl5uHnY4Wm5g
   - icon: wikipedia-w
     icon_pack: fab
     name: Read
-    url: https://en.wikipedia.org/wiki/Aist%C4%97_Smilgevi%C4%8Di%C5%ABt%C4%97
+    url: https://bg.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D0%B8%D1%86%D0%B0_%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0
   - icon: facebook 
     icon_pack: fab
     name: Facebook
-    url: https://www.facebook.com/aiste.smilgeviciute
+    url: https://www.facebook.com/rossikirilovaofficialpage
   - icon: soundcloud
     icon_pack: fab
     name: Listen
-    url: https://soundcloud.com/aistesmilgeviciute
+    url: https://soundcloud.com/rossi-kirilova
   - icon: fingerprint
     icon_pack: fas
-    name: GND
-    url: https://d-nb.info/1111114757
+    name: GND Unknown
+    url:
   - icon: fingerprint
     icon_pack: fas
     name: VIAF
-    url: https://viaf.org/viaf/3246154260691624480009/
+    url: https://viaf.org/viaf/9679154260762324480009/
   - icon: fingerprint
     icon_pack: fas
-    name: ISNI
-    url: https://isni.oclc.org/xslt/DB=1.2//CMD?ACT=SRCH&IKT=8006&TRM=ISN%3A0000%200001%203319%203871&COOKIE=U51,KENDUSER,I28,B0028++++++,SY,NISNI,D1.2,Eef035e40-3b,A,H1,,3-28,,30-41,,43-59,,65-70,,74-75,R83.85.66.13,FY
+    name: ISNI Unknown
+    url: 
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -67,6 +64,6 @@ url_video: ""
 slides: ""
 ---
 
-Aistė Smilgevičiūtė (born 29 October 1977) is a Lithuanian singer. She performs folk music, jazz, pop rock and other kinds of alternative music.
+Rositsa Kirilova (Bulgarian: Росица Кирилова; born 2 July 1953) is a Bulgarian pop singer.
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6Iucw86uE5QnTZXZP0E0rc?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0TTAIJc89kYNdCYd7HHpqd?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
