@@ -68,10 +68,13 @@ image:
 
 Regional styles abound in Bulgaria. Northern Bulgaria, Dobruja, Shopluk, Thrace, Strandzha, Macedonia and Rhodopes - all have distinctive sounds.
 
+
+<iframe src="https://open.spotify.com/embed/album/1inG6GVj8ISjORjbZPb2Gq?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+
 Some folk music revolves around holidays like Christmas, New Year's Day, midsummer, and the Feast of St. Lazarus, as well as the Strandzha region's unusual Nestinarstvo rites, in which villagers fall into a trance and dance on hot coals as part of the joint feast of Sts Konstantin and Elena on 21 May. Music is also a part of more personal celebrations such as weddings.
 
 Singing has always been a tradition for both men and women. Songs were often sung by women at work parties such as the sedenka (often attended by young men and women in search of partners to court), betrothal ceremonies, and just for fun. Women also had an extensive repertoire of songs that they sang while working in the fields.
 
-
-<iframe src="https://open.spotify.com/embed/album/1inG6GVj8ISjORjbZPb2Gq?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
