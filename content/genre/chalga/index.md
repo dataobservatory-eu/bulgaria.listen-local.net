@@ -3,7 +3,7 @@ title: "Bulgarian Chalga"
 date: 2022-10-26T00:00:00
 draft: false
 
-authors: ""
+authors: ["admin"]
 
 # Publication type.
 # Legend:

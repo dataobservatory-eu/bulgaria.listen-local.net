@@ -3,7 +3,7 @@ title: "Bulgarian Folk"
 date: 2022-12-16T00:00:00
 draft: false
 
-authors: ""
+authors: ["admin"]
 
 # Publication type.
 # Legend:
@@ -11,9 +11,9 @@ authors: ""
 publication_types: ["0"]
 
 # Abstract and optional shortened version.
-abstract: 'Description of the Bulgarian folk genre.'
+abstract: 'Folk music originated from current and historical Bulgaria.'
 
-abstract_short: 'Description of the Bulgarian folk genre.'
+abstract_short: 'Folk music originated from current and historical Bulgaria.'
 
 # Is this a selected publication? (true/false)
 featured: true
