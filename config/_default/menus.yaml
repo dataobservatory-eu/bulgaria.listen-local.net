@@ -13,7 +13,7 @@ main:
     weight: 11
     parent: LLL
   - name: "In 5 minutes: presentation"
-    url: ../slides/lll-mic/
+    url: ../slides/listen-local-bulgaria-intro//
     weight: 12
     parent: LLL
   - name: News

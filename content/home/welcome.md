@@ -8,7 +8,7 @@ headless: true # This file represents a page section.
 weight: 10 # Order that this section will appear.
 #title: |
 #  Listen Local Lithuania
-hero_media: lll/LLL-home.png
+hero_media: llb/LLB-home.png
 design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: '1'
@@ -17,6 +17,4 @@ design:
   css_class:
 ---
 
-<br>
-
-**Listen Local Bulgaria**  is an experimental data service that helps connect the music heritage and the new, vibrant music scene of Bulgaria worldwide, interconnecting it with libraries, music libraries, heritage organizations, and global music encyclopedias at the same time, finding audiences for them [→ more](/author/listen-local-bulgaria/).
+**Listen Local Bulgaria**  is an experimental data service that helps connect the music heritage and the new, vibrant music scene of Bulgaria to streaming services, rigths management agencies, music libraries, heritage organizations, and global music encyclopedias at the same time, finding audiences for them [→ more](/author/listen-local-bulgaria/).
