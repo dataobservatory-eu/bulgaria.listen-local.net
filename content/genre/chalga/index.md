@@ -11,9 +11,9 @@ authors: ""
 publication_types: ["0"]
 
 # Abstract and optional shortened version.
-abstract: 'Description of Bulgarian Chalga.'
+abstract: 'Chalga (pop-folk) is a contemporary music style that combines often provocative Bulgarian lyrics with popular Eastern European (rarely Russian and Ukrainian) and Turkish music.'
 
-abstract_short: 'Description of Bulgarian Chalga.'
+abstract_short: 'Chalga (pop-folk) is a contemporary music style that combines often provocative Bulgarian lyrics with popular Eastern European (rarely Russian and Ukrainian) and Turkish music.'
 
 # Is this a selected publication? (true/false)
 featured: true
