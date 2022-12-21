@@ -19,6 +19,18 @@ main:
   - name: News
     url: post
     weight: 20
+  - name: Database
+    url: ""
+    weight: 25
+    identifier: database
+  - name: 🗃️ Write-in Database
+    url: ../data/write-in/
+    weight: 26
+    parent: database
+  - name: ✅ Opt-in Database
+    url: ../data/opt-in/
+    weight: 27
+    parent: database
   - name: Contributors
     url: contributors
     weight: 30

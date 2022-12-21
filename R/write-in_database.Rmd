@@ -1,0 +1,173 @@
+---
+title: "Write-in Database"
+author: "Daniel Antal"
+date: "2022-12-18"
+output: 
+  md_document:
+    default
+  html_document:
+    default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(LLcollectoR)
+library(dplyr)
+library(kableExtra)
+library(here)
+data("wikidata_cross_reference")
+write_in_description <- read.csv(here("R", "write-in_description.csv"))
+
+wikidata_property_prefix <- "https://www.wikidata.org/wiki/Property:"
+
+wikidata_cross_reference <- wikidata_cross_reference %>%
+  filter ( ! .data$property %in% c("VK ID", "Yandex artist ID")) 
+
+wd_cross_reference <- wikidata_cross_reference  %>% 
+  left_join( write_in_description %>% select (-description), by = c("property"))
+
+create_write_in_table <- function(df) {
+  df %>%
+    mutate ( property = text_spec(.data$property, 
+                                  link = paste0(wikidata_property_prefix,
+                                                .data$pid))
+    ) %>%
+    mutate ( example = text_spec(.data$example_text, 
+                                 link = .data$example_url)) %>%
+    mutate ( example = ifelse (is.na(.data$example_text), "", .data$example)) %>%
+    select ( all_of(c("property", "new_description", "example"))) %>%
+    rename ( description = new_description ) %>%
+    distinct_all() %>% 
+    knitr::kable(escape = FALSE) 
+}
+```
+
+# Write-in Database
+
+The `Listen Local Write-in Database` collects, contrasts, and if necessary, corrects information about musical artists, and music work (recordings).  We only collect information about commercially released music, because in this case, the artist and their representatives made the music with information public and publicly retrievable.  The Write-In Database therefore does not require consent from the artist or the artist's representative. 
+
+The Write-in Database is a very important starting point to monitor the performance of the local (national or regional) repertoire and identify programs that make the music less visible, or may result in late or missed payments. It can be use separately, or together with the [Listen Local Opt-In Database](/data/opt-in). The `Opt-In Database` contains all information that requires explicit artist (or lawful representative) consent for collection and use.
+
+The database contains properties and variables. 
+- Properties do not change, or change infrequently (such as the name of an artist, which may change over the course of life but can be seen stable.) We time-stamp them with the entry date, and change them only if necessary.
+- Variables, such as the number of Spotify or Instagram followers, change, and we collect them regularly with timestamps.
+
+## Cross-identification properties
+
+We use cross-identification data to check properties and variables, i.e. dynamically changing information about a musical artist or a music work/recording in various web resources. 
+
+### Name authorities {#name-authorities}
+
+One of the most frequent metadata problem on music streaming services is name ambiguity. There are many artists named 'Rain'.  How can an algorithm recommend the correct `Rain` to a user?  How can we make sure that the correct `Rain` is getting paid?
+
+There are many national and international name authorities that give a globally unique identifier for artists. Unfortunately, their use is not mandatory yet in most web services. Name authorities are great starting points to start name disambiguation.
+
+Listen Local cross-checks identity data in the following services:
+
+
+```{r cross-reference, echo=FALSE}
+wd_cross_reference %>%
+  filter ( .data$category %in% c("name authority", "library catalogue")) %>%
+  create_write_in_table()
+```
+
+Many national libraries provide excellent national name authorities. 
+
+```{r library, echo=FALSE}
+wd_cross_reference %>%
+  filter ( .data$category %in% c("library catalogue"))  %>%
+  create_write_in_table()
+```
+
+## Music streaming services {#music-streaming-services}
+
+Our most important goal is to make sure that `Listen Local` artists can be found and properly recommended by algorithms on various music platforms. Currently we are connecting to the following services. At the early stage of the project, we only trace and measure information on Spotify.
+
+```{r music-streaming-service, echo=FALSE}
+wd_cross_reference %>%
+  filter ( .data$category %in% c("music streaming service"))  %>%
+  create_write_in_table()
+```
+
+## Lyrics services {#lyrics-services}
+
+Lyrics is very important in many genres.  People often want to sing along a song, or want to look up a song by a few lines in the lyrics that they like. The lyrics is a work on its own, and it is important to see if it well-connected to music work and recording itself.
+
+```{r lyrics-services, echo=FALSE}
+wd_cross_reference %>%
+  filter ( .data$category %in% c("lyrics database"))  %>%
+  create_write_in_table()
+```
+
+
+### Social media {#social-media}
+
+Artists mainly connect to audiences via social media.  Concert and festival promoters, record labels often make decisions on working with an artist on social media metrics. Social media data is very useful to find new audience for the artist. We record information about the following social media.
+
+```{r social-media, echo=FALSE}
+wd_cross_reference %>%
+  filter ( .data$category %in% c("social media"))  %>%
+  create_write_in_table()
+```
+
+
+### Music information services {#music-info}
+
+There are more than 100,000,000 songs competing for the attention of music fans, radio curators, concert and festival promoters, playlist editors, music editors for film and advertising.
+
+Music services often rely on information about an artits or his/her work from music information services.  It is important to check if correct (factual and well-structured) information is available about the artist and works. 
+
+We are providing data health checks on various music information services.
+
+
+```{r music-info, echo=FALSE}
+wd_cross_reference %>%
+  filter ( .data$category %in% c("musc information service", "music charts service", "music discovery service"))  %>%
+  create_write_in_table()
+```
+
+
+### Biographical & Career Properties
+
+Biographical and career properties are very important to recommend and artist, or the works/recordings of an artist to an appropriate local, national or foreign (export audience.)
+
+We collect location data about artists, and in some cases, their works/recordings. We want to know where the artist was born, where is the artist active, and if a particular work/recording has any relationship with a location.  This makes our music recommendation location-aware.
+
+
+
+### Lyrics properties
+
+The lyrics properties are necessary for recommending the music or to enforce local content guidelines. They may be needed to find the right context for the work/recording.
+
+- `instrumental`: We mark instrumental music. In usch cases, the lyrics properies will be logically missing (i.e. not by omission or lack of access.)
+- `explicit`: The lyrics contains expressions that are not suitable for certain audiences, particularly where minors are present.
+- `language`: The language of vocal music is very important to find a proper audience for a song. We record the language property of the title and the lyrics. For multi-language lyrics, we will develop a special taxonomy.  
+- `hate speech`: The lyrics contains hate speech.  Listen Local is committed to fight racism, xenophobia and hatred, and records works/recordings with hateful lyrics on a special table that is never recommended by our applications. Furthermore, we make steps to request the removal of such works from public platforms.
+
+### Musicological properties
+
+The musicological properties are necessary for recommending the music.  They may be needed to find the right context for the work/recording.
+
+- `key`: The main key of the recording (for Western music.)
+- `tempo`: The tempo of the music.
+
+### Audio properties
+
+The audio properties are necessary for recommending the music. They may refer to sound qualities: often a recording must meet minimum requirements or parameters to be included in a radio or streaming playlist. Or, the audio qualities will be necessary to find the right context for the work/recording.
+
+- `duration`: The length of a recording. (Works may have several recordings with different duration.)
+
+### Rights management and economic properties
+
+Rights management properties are necessary to collect use revenues for the artist's works (publishing side) or recordings (neighboring rights: producer and performer royalties.) 
+
+From a policy perspective, such information is critical to implement local content policies, such as enforcing local/national radio or streaming quotas.
+
+- `isrc`: The unique international identifier of a commercially released recording. The ISRC code connects the producers and performers to a recorded performance of a work.
+- `isrc_country`: The country where the ISRC was registered.
+- `isrc_year`: The year when the ISRC was registered.
+- `iswc`: The unique international identifier of a music work (composition.) A work may have several (or no known) recorded performances. The ISWC code connects a music work to music artists who composed the work.
+- `label`: The music label that is known to manage the producer (and potentially performing) rights of a recording. Label representation is a variable, it may change time to time.
+- `publisher`: The music publisher that is known to manage the author's rights (copyrights) of a music work. Publishing representation is a variable, it may change time to time.
+
+
