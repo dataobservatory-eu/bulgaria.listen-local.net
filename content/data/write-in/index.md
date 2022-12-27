@@ -48,11 +48,10 @@ Local Opt-In Database](/data/opt-in). The `Opt-In Database` contains all
 information that requires explicit artist (or lawful representative)
 consent for collection and use.
 
-The database contains properties and variables. - Properties do not
-change, or change infrequently (such as the name of an artist, which may
-change over the course of life but can be seen stable.) We time-stamp
-them with the entry date, and change them only if necessary. -
-Variables, such as the number of Spotify or Instagram followers, change,
+The database contains properties and variables. 
+
+- Properties do not change, or change infrequently (such as the name of an artist, which may change over the course of life but can be seen stable.) We time-stamp them with the entry date, and change them only if necessary. 
+- Variables, such as the number of Spotify or Instagram followers, change,
 and we collect them regularly with timestamps.
 
 ## Cross-identification properties

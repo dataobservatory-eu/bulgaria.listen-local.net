@@ -24,9 +24,6 @@ url_slides: ""
 url_video: ""
 
 # Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
@@ -79,8 +76,13 @@ four objectives:
     national repertoires, local language use, minority languages, or
     correction of gender-based biases.)
 4.  Carry out scientific research about data and metadata problems that
-    put small langauge, small nation, and non-mainstream artists at a
+    put small language, small nation, and non-mainstream artists at a
     disadvantage to find audiences, visibility and income.
+
+    
+## Opt-In Form
+
+The Opt-In Form is documented [here](https://documentation.listen-local.net/the-opt-in-form.html).
 
 ## Name
 

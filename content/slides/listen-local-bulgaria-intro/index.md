@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Listen Local Bulgaria"
 summary: Invitation for an open collaboration
-date: "2022-12-20T00:00:00Z"
+date: "2022-12-27T00:00:00Z"
 output: pdf_document
 categories: []
 authors:
@@ -163,7 +163,7 @@ This is where we want to help with Listen Local Bulgaria.
 - Our automated services will check the data of Listen Local aritsts in many global platforms. 
 - We will take note of missing, misformatted, or potentially incorrect data, and make non-personal corrections automatically.
 - We will correct incorrect data to avoid late or loss of revenue.
-- Artist who opt-in to our service will get a tool to take control of there data on many platforms in one window.
+- Artists who opt-in to our service will get a tool to take control of there data on many platforms in one window (see [Opt-in Form documentation](http://documentation.listen-local.net/the-opt-in-form.html).)
 
 
 ---
