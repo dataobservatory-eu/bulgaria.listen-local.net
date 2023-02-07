@@ -16,39 +16,53 @@ main:
     url: ../slides/listen-local-bulgaria-intro//
     weight: 12
     parent: LLL
-  - name: News
+  - name: Blog
     url: post
     weight: 20
-  - name: Database
+  - name: Community
     url: ""
-    weight: 25
-    identifier: database
-  - name: 🗃️ Write-in Database
-    url: ../data/write-in/
-    weight: 26
-    parent: database
-  - name: ✅ Opt-in Database
-    url: ../data/opt-in/
-    weight: 27
-    parent: database
-  - name: Contributors
-    url: contributors
     weight: 30
-  - name: Musical artists
-    url: /music_artist/
-    weight: 50
+    identifier: community
+  - name: Musicians
+    url: /musicians/
+    weight: 31
+    parent: community
+  - name: Contributors
+    url: /contributors/
+    weight: 32
+    parent: community
   - name: Music
-    url: /music_work/
+    url: ""
     identifier: Music
-    weight: 55
-  - name: Genres, Scenes, Traditions
+    weight: 40
+  - name: Genres
     url: /genre/
-    weight: 56
+    weight: 41
+    parent: Music
+  - name: Bands
+    url: /bands/
+    weight: 42
+    parent: Music
+  - name: Solo acts & projects
+    url: /solo/
+    weight: 43
     parent: Music
   - name: Music Works & Recordings
     url: /music_work/
-    weight: 56
+    weight: 46
     parent: Music
+  - name: Database
+    url: ""
+    weight: 50
+    identifier: database
+  - name: 🗃️ Write-in Database
+    url: ../data/write-in/
+    weight: 51
+    parent: database
+  - name: ✅ Opt-in Database
+    url: ../data/opt-in/
+    weight: 52
+    parent: database
   - name: Contact & Events
     url: '#contact'
     weight: 90
