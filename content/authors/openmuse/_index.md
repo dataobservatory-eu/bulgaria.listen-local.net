@@ -1,6 +1,6 @@
 ---
 # Display name
-title: OpenMuse
+title: Open Music Europe
 
 # Is this the primary user of the site?
 superuser: true
@@ -10,8 +10,12 @@ role: ""
 
 # Organizations/Affiliations
 organizations:
-  - name: OpenMuse
+  - name: An open, scalable data-to-policy pipeline for European Music Ecosystems
     url: 'https://openmuse.dataobservatory.eu/'
+  - name: Horizon Europe
+    url: https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en
+  - name: CORDIS
+    url: 'https://cordis.europa.eu/project/id/101095295'
 # Short bio (displayed in user profile at end of posts)
 bio: ""
 
@@ -32,7 +36,7 @@ social:
     link: https://twitter.com/datandlyrics
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/dataobservatory-eu/openmuse.dataobservatory.eu
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -51,7 +55,7 @@ user_groups:
   - Institutional partners
 ---
 
-The [OpenMuse](https://music.dataobservatory.eu/project/openmuse/) project brings together music industry stakeholders and researchers from 12 European countries. Our partners represent the diversity of the industry, as well as the shared need to find financially, socially, and environmentally sustainable policy and business models in multiple, sometimes-fragmented streams (e.g., live music, composers/publishers, and recordings with producers and performers).
+The [Open Music Europe](https://music.dataobservatory.eu/project/openmuse/) project brings together music industry stakeholders and researchers from 12 European countries. Our partners represent the diversity of the industry, as well as the shared need to find financially, socially, and environmentally sustainable policy and business models in multiple, sometimes-fragmented streams (e.g., live music, composers/publishers, and recordings with producers and performers).
 
 Our data pillars are following the structure laid out in the [Feasibility study for the establishment of a European Music Observatory](music.dataobservatory.eu/post/2020-11-16-european-music-observatory-feasibility/): [Music Economy](music.dataobservatory.eu/pillars/music-and-society/); [Diversity & Circulation](music.dataobservatory.eu/pillars/diversity-circulatoin/); [Music & Society](music.dataobservatory.eu/pillars/music-and-society/) and [Innovation - innovative data applications](music.dataobservatory.eu/#usecases)
 
