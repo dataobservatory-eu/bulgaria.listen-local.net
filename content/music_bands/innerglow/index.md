@@ -61,10 +61,10 @@ image:
   caption: "Photo: Innerglow by © Denis Stoyanov."
   focal_point: Smart
   preview_only: true
-
+  
 ---
 
-{{<figure src="/img/listen_local_portraits/innerglow_standing.webp" caption="Innerglow by © Denis Stoyanov.">}} 
+{{<figure src="../music_artists/innerglow.jpg" caption="Innerglow by © Denis Stoyanov.">}}
 
 {{% callout note %}}
 **Innerglow** is a male pop-rock band from Sofia, Bulgaria founded in 2017. The band mainly works in Bulgaria, but their music belongs to the pop and rock scenes, centered in London, UK.
