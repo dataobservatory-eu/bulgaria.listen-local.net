@@ -19,37 +19,32 @@ main:
   - name: Blog
     url: post
     weight: 20
-  - name: Community
-    url: ""
+  - name: Contributors
+    url: contributors
     weight: 30
-    identifier: community
+  - name: Musicians & Bands
+    url: ""
+    weight: 40
+    identifier: musicians
   - name: Musicians
     url: /musicians/
-    weight: 31
-    parent: community
-  - name: Contributors
-    url: /contributors/
-    weight: 32
-    parent: community
-  - name: Music
-    url: ""
-    identifier: Music
-    weight: 40
-  - name: Genres
-    url: /genre/
     weight: 41
-    parent: Music
+    parent: musicians
   - name: Bands
-    url: /bands/
+    url: /music_bands/
     weight: 42
-    parent: Music
-  - name: Solo acts & projects
-    url: /solo/
+    parent: musicians
+  - name: Solo projects
+    url: /solo_projects/
     weight: 43
+    parent: musicians
+  - name: Genres, Scenes, Traditions
+    url: /genre/
+    weight: 56
     parent: Music
   - name: Music Works & Recordings
     url: /music_work/
-    weight: 46
+    weight: 56
     parent: Music
   - name: Database
     url: ""
