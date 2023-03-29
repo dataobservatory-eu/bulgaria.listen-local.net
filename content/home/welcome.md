@@ -8,7 +8,7 @@ headless: true # This file represents a page section.
 weight: 10 # Order that this section will appear.
 #title: |
 #  Listen Local Lithuania
-hero_media: llb/LLB-home.png
+hero_media: llb/llb-homepage.png
 design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: '1'
